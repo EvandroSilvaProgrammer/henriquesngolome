@@ -463,7 +463,6 @@ ul:after {
 .common-desctiption {
     color: #888;
     text-align: center;
-    text-transform: capitalize;
     margin-bottom: 8px
 }
 
@@ -472,7 +471,6 @@ h1.common-title {
     line-height: 1.2;
     font-weight: 700;
     position: relative;
-    text-transform: capitalize;
     word-spacing: 5px;
     text-align: center
 }
@@ -519,7 +517,6 @@ h1.common-title {
     background-color: #ff651c;
     color: #fff;
     letter-spacing: 1px;
-    text-transform: capitalize;
     border-radius: 4px;
     border: 2px solid #ff651c;
     font-size: 15px;
@@ -817,7 +814,6 @@ section.active {
     font-weight: 600;
     line-height: 50px;
     letter-spacing: 1px;
-    text-transform: uppercase
 }
 
 .animated-text h3:nth-child(1) {
@@ -871,7 +867,6 @@ section.active {
 
 .about-content .personal-title {
     text-align: left;
-    text-transform: capitalize;
     letter-spacing: 1px
 }
 
@@ -886,7 +881,6 @@ section.active {
 .about-content .personal-infotitle {
     margin-bottom: 16px;
     letter-spacing: 1px;
-    text-transform: capitalize;
     margin-top: 16px
 }
 
@@ -908,7 +902,6 @@ section.active {
 
 .about-content .about-you .title {
     color: #888;
-    text-transform: capitalize
 }
 
 .about-content .about-you .value a {
@@ -1224,7 +1217,6 @@ section.active {
 .service-line {
     color: #ff651c;
     margin-top: 10px;
-    text-transform: capitalize;
     position: relative
 }
 
@@ -1355,7 +1347,6 @@ section.active {
     position: relative;
     margin: 0;
     font-size: 18px;
-    text-transform: capitalize
 }
 
 .portfolio-menu {
@@ -1445,7 +1436,6 @@ li {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: capitalize;
     margin: 0 0 5px;
     color: #fff
 }
@@ -1454,7 +1444,6 @@ li {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: capitalize;
     margin: 0 0 11px;
     color: #fff;
     display: inline-block;
@@ -1487,6 +1476,140 @@ ul.container {
     box-shadow: 0 0 10px rgb(0 0 0 / 35%);
     border-radius: 10px
 }
+
+
+
+/* gallery */
+.gallery .container-card {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 40px 0; */
+    background: #fff;
+  }
+  
+  .gallery .container-card .card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .gallery .container-card .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .gallery .container-card .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  .gallery .gallery .container-card .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  .gallery .container-card .card .content .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    /* border: 10px solid rgb(25, 113, 180); */
+  }
+  
+  .gallery .container-card .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  
+  .gallery .container-card .card .content .contentBx h3 {
+    color: rgb(0, 0, 0);;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1rem;
+  } 
+  
+  .gallery .container-card .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+  }
+  
+  .gallery .btn-wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+    text-align: center;
+  }
+  
+  .gallery .btn-buy {
+    background: #ff651c;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .gallery .btn-buy:hover {
+    background: #d74907;;
+  }
+  
+  .gallery .container-card .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    margin-left: -30px;
+  }
+  
+  .gallery .container-card .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+  }
+  
+  .gallery .container-card .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  .gallery .container-card .card .sci li a {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+  }
+
 
 .fancybox-image,
 .fancybox-spaceball {
@@ -1522,7 +1645,6 @@ ul.container {
 }
 
 .post-content .content-title h5>a {
-    text-transform: capitalize;
     letter-spacing: 1px;
     color: #000
 }
@@ -1586,7 +1708,6 @@ ul.container {
 
 .contact-section .content-title {
     margin-bottom: 22px;
-    text-transform: capitalize
 }
 
 .contact-section .contact-form .form-group {
@@ -1802,7 +1923,6 @@ ul.container {
 
 .blog-content .blog-body .title {
     color: #ff651c;
-    text-transform: capitalize;
     margin-top: 10px;
     letter-spacing: 1px
 }
