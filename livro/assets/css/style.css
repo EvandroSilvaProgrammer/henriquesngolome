@@ -3690,7 +3690,7 @@ a.back span {
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     /* margin: 40px 0; */
@@ -3733,9 +3733,9 @@ a.back span {
 
 .gallery .container-card .card .content .imgBx {
     position: relative;
-    width: 260px;
+    width: 245px;
     height: 260px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     overflow: hidden;
     /* border: 10px solid rgb(25, 113, 180); */
 }
