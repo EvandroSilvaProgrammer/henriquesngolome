@@ -3746,7 +3746,7 @@ a.back span {
     position: relative;
     width: 245px;
     height: 260px;
-    border-radius: 50%;
+    border-radius: 5px;
     overflow: hidden;
     /* border: 10px solid rgb(25, 113, 180); */
 }
