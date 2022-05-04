@@ -2688,11 +2688,11 @@ a.back span {
     margin-top: 30px
 }
 
-.testimonials .testimonial-panel .testimonial-body .testimonial-author .testimonial-img {
-    width: 56px;
-    height: 49px;
+/* .testimonials .testimonial-panel .testimonial-body .testimonial-author .testimonial-img {
+    width: 120px;
+    height: 120px;
     background-color: #faf8fb;
-    border-radius: 6px;
+    border-radius: 10px;
     margin-right: 17px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2703,12 +2703,23 @@ a.back span {
     -webkit-box-align: right;
     -ms-flex-align: right;
     align-items: right
-}
+} */
 
 .testimonials .testimonial-panel .testimonial-body .testimonial-author .testimonial-img img {
-    width: auto;
-    max-width: 100%;
-    display: inline-block
+    width: 110px;
+    height: 120px;
+    background-color: #faf8fb;
+    border-radius: 10px;
+    margin-right: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    -webkit-box-align: right;
+    -ms-flex-align: right;
+    align-items: right
 }
 
 .testimonials .testimonial-panel .testimonial-body .testimonial-author p {
