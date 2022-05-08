@@ -1799,7 +1799,8 @@ ul.container {
 
 .blog-content .content-title {
     margin-top: 30px;
-    color: #ff651c
+    color: #ff651c;
+    text-align: center;
 }
 
 .blog-content .contact-section .social-icons::before {
