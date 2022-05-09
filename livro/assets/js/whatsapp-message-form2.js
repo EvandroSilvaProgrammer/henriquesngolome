@@ -10,7 +10,7 @@ inputs = [{
     type: 'text',
 }];
 
-$("#submitBtn").click(function() {
+$("#submitBtn2").click(function() {
     submit();
 });
 
@@ -20,17 +20,17 @@ function isEmail(email) {
     return regex.test(email);
 }
 
-function cleanInputs() {
-    $(".contact-form").find("input").each(function() {
-        $(this).val("");
-    });
-    $(".contact-form").find("textarea").each(function() {
-        $(this).val("");
-    });
-}
+// function cleanInputs() {
+//     $(".contact-form").find("input").each(function() {
+//         $(this).val("");
+//     });
+//     $(".contact-form").find("textarea").each(function() {
+//         $(this).val("");
+//     });
+// }
 
 function submit() {
-    console.log('cliquei form1');
+    console.log('cliquei form2');
     var submit = "";
     var text = "";
 
@@ -93,6 +93,6 @@ function submit() {
         window.open("https://wa.me/" + mobile + "?text=" + message, blank);
 
         alert("Você foi redirecionado para o WhatsApp para enviar a sua mensagem. \n \n Entraremos em contacto em breve, obrigado.");
-        cleanInputs();
+        // cleanInputs();
     }
 }
