@@ -3793,14 +3793,12 @@ a.back span {
     transition: none;
     font-size: 14px;
     font-weight: 400;
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     transition: 0.3s;
 }
 
 .gallery .btn-buy:hover {
     background: #d74907;
-    ;
 }
 
 .gallery .container-card .card .sci {
