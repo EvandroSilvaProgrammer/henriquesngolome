@@ -19,23 +19,24 @@ textareas = [{
 
 ];
 
-$("#contact-submit").click(function() {
+$("#contactSubmit").click(function() {
     submit();
 });
+
 
 function isEmail(email) {
     var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return regex.test(email);
 }
 
-// function cleanInputs() {
-//     $(".contact-form").find("input").each(function() {
-//         $(this).val("");
-//     });
-//     $(".contact-form").find("textarea").each(function() {
-//         $(this).val("");
-//     });
-// }
+function cleanInputs() {
+    $(".contact-form").find("input").each(function() {
+        $(this).val("");
+    });
+    $(".contact-form").find("textarea").each(function() {
+        $(this).val("");
+    });
+}
 
 function submit() {
     console.log('cliquei');
