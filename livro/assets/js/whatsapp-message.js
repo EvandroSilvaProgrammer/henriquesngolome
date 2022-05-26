@@ -1,6 +1,6 @@
 mobile = "244938165179";
 openInNewWindow = "true";
-title_form = "Mensagem enviada a partir do site";
+title_form = "Mensagem enviada a partir do site 2";
 
 input = "true";
 inputs = [{
@@ -22,9 +22,6 @@ function isEmail(email) {
 
 function cleanInputs() {
     $(".contact-form").find("input").each(function() {
-        $(this).val("");
-    });
-    $(".contact-form").find("textarea").each(function() {
         $(this).val("");
     });
 }
